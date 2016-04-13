@@ -8,14 +8,31 @@
 
 import UIKit
 
+let IPHONE4 = CGSizeEqualToSize(CGSizeMake(640, 960), (UIScreen.mainScreen().currentMode?.size)!)
+let screenFrame = UIScreen.mainScreen().bounds
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var scrollView:UIScrollView!
+    var guideView = UIView()
+    var guidePageNumInteger:NSInteger! = 3
+    var isGuidePage = Bool()
+    
+    
+    
+    
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        window?.frame = screenFrame
+        window?.backgroundColor = UIColor.whiteColor()
+        
+        
         return true
     }
 

@@ -14,6 +14,9 @@
 		847BC8AF1CBDEE90009E16A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8A91CBDEE90009E16A0 /* AppDelegate.swift */; };
 		847BC8B01CBDEE90009E16A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847BC8AA1CBDEE90009E16A0 /* Main.storyboard */; };
 		847BC8B11CBDEE90009E16A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8AB1CBDEE90009E16A0 /* ViewController.swift */; };
+		847BC8B41CBE2D46009E16A0 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8B31CBE2D46009E16A0 /* CustomFont.swift */; };
+		847BC8B61CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8B51CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift */; };
+		847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */; };
 		848436C61CBD033A007E59E7 /* ImprMySkilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848436C51CBD033A007E59E7 /* ImprMySkilTests.swift */; };
 		848436D11CBD033A007E59E7 /* ImprMySkilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848436D01CBD033A007E59E7 /* ImprMySkilUITests.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,9 @@
 		847BC8A91CBDEE90009E16A0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847BC8AA1CBDEE90009E16A0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		847BC8AB1CBDEE90009E16A0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847BC8B31CBE2D46009E16A0 /* CustomFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		847BC8B51CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityCTTelphoneRadioInfo.swift; sourceTree = "<group>"; };
+		847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPerfernces.swift; sourceTree = "<group>"; };
 		848436AD1CBD033A007E59E7 /* ImprMySkil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImprMySkil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848436BC1CBD033A007E59E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		848436C11CBD033A007E59E7 /* ImprMySkilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImprMySkilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +135,16 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		847BC8B21CBE2CF0009E16A0 /* CustomTools */ = {
+			isa = PBXGroup;
+			children = (
+				847BC8B31CBE2D46009E16A0 /* CustomFont.swift */,
+				847BC8B51CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift */,
+				847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */,
+			);
+			path = CustomTools;
+			sourceTree = "<group>";
+		};
 		848436A41CBD033A007E59E7 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +171,7 @@
 				847BC8871CBDEADF009E16A0 /* ThirdPartyClasses */,
 				847BC8A01CBDEE90009E16A0 /* SupportingFiles */,
 				847BC8A71CBDEE90009E16A0 /* UI */,
+				847BC8B21CBE2CF0009E16A0 /* CustomTools */,
 			);
 			path = ImprMySkil;
 			sourceTree = "<group>";
@@ -308,6 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */,
+				847BC8B61CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift in Sources */,
+				847BC8B41CBE2D46009E16A0 /* CustomFont.swift in Sources */,
 				847BC8AF1CBDEE90009E16A0 /* AppDelegate.swift in Sources */,
 				847BC88B1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m in Sources */,
 				847BC8B11CBDEE90009E16A0 /* ViewController.swift in Sources */,
