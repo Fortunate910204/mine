@@ -13,8 +13,6 @@ class AddPerfernces: NSObject {
     static let sharedInstance = AddPerfernces()
     
     func writeFileStorekey(file:String, storeKey:String) {
-//        let fileMgr = NSFileManager.defaultManager()
-        
-        
+        let fileMgr = NSFileManager.defaultManager()
     }
 }
