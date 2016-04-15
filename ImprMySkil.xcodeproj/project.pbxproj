@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840CBBBE1CC0C57A00244345 /* UserDataMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBBD1CC0C57A00244345 /* UserDataMgr.swift */; };
+		840CBBC01CC0D55500244345 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBBF1CC0D55500244345 /* DataRequest.swift */; };
 		847BC88B1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847BC88A1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m */; };
 		847BC8AC1CBDEE90009E16A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847BC8A11CBDEE90009E16A0 /* Assets.xcassets */; };
 		847BC8AD1CBDEE90009E16A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847BC8A21CBDEE90009E16A0 /* LaunchScreen.storyboard */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840CBBBD1CC0C57A00244345 /* UserDataMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataMgr.swift; sourceTree = "<group>"; };
+		840CBBBF1CC0D55500244345 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		847BC8891CBDEADF009E16A0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		847BC88A1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
 		847BC8A11CBDEE90009E16A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				847BC8B31CBE2D46009E16A0 /* CustomFont.swift */,
 				847BC8B51CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift */,
 				847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */,
+				840CBBBD1CC0C57A00244345 /* UserDataMgr.swift */,
+				840CBBBF1CC0D55500244345 /* DataRequest.swift */,
 			);
 			path = CustomTools;
 			sourceTree = "<group>";
@@ -325,9 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840CBBC01CC0D55500244345 /* DataRequest.swift in Sources */,
 				847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */,
 				847BC8B61CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift in Sources */,
 				847BC8B41CBE2D46009E16A0 /* CustomFont.swift in Sources */,
+				840CBBBE1CC0C57A00244345 /* UserDataMgr.swift in Sources */,
 				847BC8AF1CBDEE90009E16A0 /* AppDelegate.swift in Sources */,
 				847BC88B1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m in Sources */,
 				847BC8B11CBDEE90009E16A0 /* ViewController.swift in Sources */,
