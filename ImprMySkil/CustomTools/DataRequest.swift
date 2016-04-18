@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class DataRequest: NSObject {
 
@@ -47,5 +49,74 @@ class DataRequest: NSObject {
         parameters!["iOSVersionNum"] = iOSVersionNum
         return parameters!
     }
+
+    func GETRequest(urlString:URLStringConvertible,
+                    parameters: [String: AnyObject]? = nil,
+                    CacheKey:String,
+                    Success:(Response:AnyObject, isCacheKey:Bool) -> Void,
+                    Failure:AnyObject -> Void) {
+        if !CacheKey .isEmpty {
+            let user:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+            let responseObjectDict = user.objectForKey(CacheKey as String)
+            if responseObjectDict != nil {
+                Success(Response: responseObjectDict!, isCacheKey: true)
+            }
+        }
+        Alamofire.request(.GET, urlString, parameters: parameters).responseJSON { Response in
+            switch Response.result{
+            case .Success:
+                Success(Response: Response.result.value!, isCacheKey: false)
+                if !CacheKey.isEmpty{
+                    let user:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                    user.setObject(Response.result.value, forKey: CacheKey)
+                    print("Alamofire  CacheSuccess --->>"+(Response.request?.URLString)!)
+                }else{
+                    print("Alamofire  CacheFailure"+(Response.request?.URLString)!)
+                }
+                break
+            
+            case .Failure(let error):
+                print("Alamofire Failure --->>"+(Response.request?.URLString)!)
+                Failure(error)
+                break
+            }
+        }
+    }
+    
+    func POSTRequest(urlString:URLStringConvertible,
+                     parameters:[String: AnyObject]? = nil,
+                     CacheKey: NSString,
+                     Success:(Response:AnyObject, isCachekey:Bool) -> Void,
+                     Failure:AnyObject -> Void)
+    {
+        if CacheKey != "" {
+            let user:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+            let responseObjectDict = user.objectForKey(CacheKey as String)
+            if responseObjectDict != nil {
+                Success(Response: responseObjectDict!, isCachekey: true)
+            }
+        }
+        Alamofire.request(.POST, urlString, parameters: parameters).responseJSON { Response in
+            switch Response.result{
+            case .Success:
+                Success(Response: Response.result.value!, isCachekey: false)
+                if CacheKey != ""{
+                    let user:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                    user.setObject(Response.result.value, forKey: CacheKey as String)
+                    print("Alamofire  CacheSuccess --->>"+(Response.request?.URLString)!)
+                }else{
+                    print("Alamofire  CacheFailure --->>"+(Response.request?.URLString)!)
+                }
+                break
+            
+            case .Failure(let error):
+                print("Alamofire Failure --->>"+(Response.request?.URLString)!)
+                Failure(error)
+                break
+            }
+        }
+    }
+    
+    
     
 }
