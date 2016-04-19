@@ -117,6 +117,57 @@ class DataRequest: NSObject {
         }
     }
     
+    func getLoginPost(urlString: URLStringConvertible,
+                      parameters: [String: AnyObject]? = nil,
+                      cacheKey: String,
+                      success: (Response: AnyObject, isCacheKey:Bool) -> Void,
+                      failure: AnyObject -> Void){
+        let parameters = self.addParameters(parameters)
+        POSTRequest(urlString, parameters: parameters, CacheKey: cacheKey, Success: success, Failure: failure)
+        
+    }
+    
+    func getUserInit(urlString: URLStringConvertible,
+                     parameters: [String: AnyObject]? = nil,
+                     cacheKey:String,
+                     success: (Response: AnyObject, isCacheKey:Bool) -> Void,
+                     failure: AnyObject -> Void){
+//        let parameters = self.addParameters(parameters)
+        let parameters = addParameters(parameters)
+        GETRequest(urlString, parameters: parameters, CacheKey: cacheKey, Success: success, Failure: failure)
+    }
+    
+    func getUserInitBegin(urlString: URLStringConvertible,
+                          parameters: [String: AnyObject]? = nil,
+                          cacheKey: String,
+                          succesee: (Response: AnyObject, isCacheKey:Bool) -> Void,
+                          failure: AnyObject -> Void){
+        let parameters = addParameters(parameters)
+        GETRequest(urlString, parameters: parameters, CacheKey: cacheKey, Success: succesee, Failure: failure)
+    }
+    
+    func getSendMessageCode(urlString: URLStringConvertible,
+                            parameters: [String: AnyObject]? = nil,
+                            cacheKey: String,
+                            success: (Response: AnyObject, isCacheKey:Bool) -> Void,
+                            failure: AnyObject -> Void){
+        let parameters = addParameters(parameters)
+        GETRequest(urlString, parameters: parameters, CacheKey: cacheKey, Success: success, Failure: failure)
+    }
+    
+    func getBaiduMap(urlString: URLStringConvertible,
+                     parameters: [String: AnyObject]? = nil,
+                     cacheKey: String,
+                     success: (Response: AnyObject, isCacheKey:Bool) -> Void,
+                     failure: AnyObject -> Void){
+        let parameters = addParameters(parameters)
+        GETRequest(urlString, parameters: parameters, CacheKey: cacheKey, Success: success, Failure: failure)
+    }
+    
+    
+    
+    
+    
     
     
 }
