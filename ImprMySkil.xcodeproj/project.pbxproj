@@ -23,6 +23,7 @@
 		847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */; };
 		848436C61CBD033A007E59E7 /* ImprMySkilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848436C51CBD033A007E59E7 /* ImprMySkilTests.swift */; };
 		848436D11CBD033A007E59E7 /* ImprMySkilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848436D01CBD033A007E59E7 /* ImprMySkilUITests.swift */; };
+		84F912101CC60DC200AEAB90 /* FileterdWebCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F9120F1CC60DC200AEAB90 /* FileterdWebCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		848436CC1CBD033A007E59E7 /* ImprMySkilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImprMySkilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848436D01CBD033A007E59E7 /* ImprMySkilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprMySkilUITests.swift; sourceTree = "<group>"; };
 		848436D21CBD033A007E59E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F9120F1CC60DC200AEAB90 /* FileterdWebCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileterdWebCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 		847BC8B21CBE2CF0009E16A0 /* CustomTools */ = {
 			isa = PBXGroup;
 			children = (
+				84F912081CC60DA700AEAB90 /* FilterdWebCache */,
 				847BC8B31CBE2D46009E16A0 /* CustomFont.swift */,
 				847BC8B51CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift */,
 				847BC8B71CBE37BB009E16A0 /* AddPerfernces.swift */,
@@ -287,6 +290,14 @@
 				848436D21CBD033A007E59E7 /* Info.plist */,
 			);
 			path = ImprMySkilUITests;
+			sourceTree = "<group>";
+		};
+		84F912081CC60DA700AEAB90 /* FilterdWebCache */ = {
+			isa = PBXGroup;
+			children = (
+				84F9120F1CC60DC200AEAB90 /* FileterdWebCache.swift */,
+			);
+			path = FilterdWebCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +493,7 @@
 			files = (
 				840CBBC01CC0D55500244345 /* DataRequest.swift in Sources */,
 				847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */,
+				84F912101CC60DC200AEAB90 /* FileterdWebCache.swift in Sources */,
 				847BC8B61CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift in Sources */,
 				847BC8B41CBE2D46009E16A0 /* CustomFont.swift in Sources */,
 				840CBBBE1CC0C57A00244345 /* UserDataMgr.swift in Sources */,
