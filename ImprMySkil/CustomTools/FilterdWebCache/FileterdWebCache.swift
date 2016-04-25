@@ -27,8 +27,6 @@ class FileterdWebCache: NSURLCache {
 //        if mUserDataMgr.black_url_list != nil{
 //            for fileNameString in mUserDataMgr.black_url_list {
 //                if url.rangeOfString(fileNameString as String).length != 0 {
-//                    
-//                    
 //                }
 //            }
 //        }

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		840CBBBE1CC0C57A00244345 /* UserDataMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBBD1CC0C57A00244345 /* UserDataMgr.swift */; };
 		840CBBC01CC0D55500244345 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840CBBBF1CC0D55500244345 /* DataRequest.swift */; };
+		842C81531CCE1CA800109FD2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C81521CCE1CA800109FD2 /* LoginViewController.swift */; };
+		842C81561CCE1E6B00109FD2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C81551CCE1E6B00109FD2 /* MyViewController.swift */; };
+		842C815D1CCE21B000109FD2 /* MySVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C81591CCE21B000109FD2 /* MySVProgressHUD.m */; };
+		842C815E1CCE21B000109FD2 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 842C815A1CCE21B000109FD2 /* SVProgressHUD.bundle */; };
+		842C815F1CCE21B000109FD2 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C815C1CCE21B000109FD2 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84371DFD1CC4D75A00478369 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84371DEB1CC4CFDB00478369 /* Alamofire.framework */; };
 		84371DFE1CC4D75A00478369 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84371DEB1CC4CFDB00478369 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		847BC88B1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847BC88A1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m */; };
@@ -116,6 +121,13 @@
 /* Begin PBXFileReference section */
 		840CBBBD1CC0C57A00244345 /* UserDataMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataMgr.swift; sourceTree = "<group>"; };
 		840CBBBF1CC0D55500244345 /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		842C81521CCE1CA800109FD2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		842C81551CCE1E6B00109FD2 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		842C81581CCE21B000109FD2 /* MySVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySVProgressHUD.h; sourceTree = "<group>"; };
+		842C81591CCE21B000109FD2 /* MySVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySVProgressHUD.m; sourceTree = "<group>"; };
+		842C815A1CCE21B000109FD2 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		842C815B1CCE21B000109FD2 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		842C815C1CCE21B000109FD2 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		84371DE01CC4CFDA00478369 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		847BC8891CBDEADF009E16A0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		847BC88A1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
@@ -167,6 +179,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842C814B1CCE1C6300109FD2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				842C81521CCE1CA800109FD2 /* LoginViewController.swift */,
+			);
+			name = Login;
+			path = Main/Login;
+			sourceTree = "<group>";
+		};
+		842C81541CCE1E5000109FD2 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				842C81551CCE1E6B00109FD2 /* MyViewController.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		842C81571CCE21B000109FD2 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				842C81581CCE21B000109FD2 /* MySVProgressHUD.h */,
+				842C81591CCE21B000109FD2 /* MySVProgressHUD.m */,
+				842C815A1CCE21B000109FD2 /* SVProgressHUD.bundle */,
+				842C815B1CCE21B000109FD2 /* SVProgressHUD.h */,
+				842C815C1CCE21B000109FD2 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		84371DE11CC4CFDA00478369 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +227,7 @@
 			children = (
 				84371DE01CC4CFDA00478369 /* Alamofire.xcodeproj */,
 				847BC8881CBDEADF009E16A0 /* AFNetworkReachabilityManager */,
+				842C81571CCE21B000109FD2 /* SVProgressHUD */,
 			);
 			path = ThirdPartyClasses;
 			sourceTree = "<group>";
@@ -216,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				847BC8A81CBDEE90009E16A0 /* Main */,
+				842C814B1CCE1C6300109FD2 /* Login */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -266,10 +309,11 @@
 		848436AF1CBD033A007E59E7 /* ImprMySkil */ = {
 			isa = PBXGroup;
 			children = (
-				847BC8871CBDEADF009E16A0 /* ThirdPartyClasses */,
 				847BC8A01CBDEE90009E16A0 /* SupportingFiles */,
+				842C81541CCE1E5000109FD2 /* CustomUI */,
 				847BC8A71CBDEE90009E16A0 /* UI */,
 				847BC8B21CBE2CF0009E16A0 /* CustomTools */,
+				847BC8871CBDEADF009E16A0 /* ThirdPartyClasses */,
 			);
 			path = ImprMySkil;
 			sourceTree = "<group>";
@@ -467,6 +511,7 @@
 				847BC8B01CBDEE90009E16A0 /* Main.storyboard in Resources */,
 				847BC8AC1CBDEE90009E16A0 /* Assets.xcassets in Resources */,
 				847BC8AD1CBDEE90009E16A0 /* LaunchScreen.storyboard in Resources */,
+				842C815E1CCE21B000109FD2 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +539,7 @@
 				840CBBC01CC0D55500244345 /* DataRequest.swift in Sources */,
 				847BC8B81CBE37BB009E16A0 /* AddPerfernces.swift in Sources */,
 				84F912101CC60DC200AEAB90 /* FileterdWebCache.swift in Sources */,
+				842C815F1CCE21B000109FD2 /* SVProgressHUD.m in Sources */,
 				847BC8B61CBE3184009E16A0 /* ReachabilityCTTelphoneRadioInfo.swift in Sources */,
 				847BC8B41CBE2D46009E16A0 /* CustomFont.swift in Sources */,
 				840CBBBE1CC0C57A00244345 /* UserDataMgr.swift in Sources */,
@@ -501,6 +547,9 @@
 				847BC88B1CBDEADF009E16A0 /* AFNetworkReachabilityManager.m in Sources */,
 				847BC8B11CBDEE90009E16A0 /* ViewController.swift in Sources */,
 				847BC8AE1CBDEE90009E16A0 /* BridgeHeader.m in Sources */,
+				842C81561CCE1E6B00109FD2 /* MyViewController.swift in Sources */,
+				842C815D1CCE21B000109FD2 /* MySVProgressHUD.m in Sources */,
+				842C81531CCE1CA800109FD2 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
